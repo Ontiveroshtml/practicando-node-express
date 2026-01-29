@@ -1,0 +1,2 @@
+´´´ FASE 1
+En esta fase se practicó Node.js puro, aprendiendo cómo acceder a las rutas, exportar módulos, utilizar process.argv y los conceptos básicos del módulo File System (fs) para leer y crear archivos.

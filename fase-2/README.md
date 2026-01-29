@@ -1,0 +1,2 @@
+´´´ FASE 2
+En esta fase se practicó Node.js puro, aprendiendo a trabajar con promesas usando el módulo fs, así como a implementar un logger mediante setInterval, crear un timer combinando setInterval y setTimeout, y leer y copiar archivos utilizando el método de streams.
