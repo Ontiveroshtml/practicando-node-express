@@ -1,4 +1,4 @@
-# Proyecto de aprendizaje en Node.js
+# Proceso de aprendizaje autodidacta en Node.js
 
 Este repositorio fue creado con el objetivo de **practicar y reforzar conocimientos de Node.js**, comenzando desde conceptos básicos hasta el uso de frameworks como **Express**.
 
