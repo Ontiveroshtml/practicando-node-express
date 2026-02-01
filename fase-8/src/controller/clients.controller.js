@@ -10,6 +10,8 @@ export const getAllClients = async (req, res, next) => {
       res.status(200).json(result.rows)
     }
 
+    console.log('nombre:', result.rows.name)
+
   } catch (err) {
     next(err)
   }
