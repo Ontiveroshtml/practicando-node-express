@@ -1,0 +1,22 @@
+{
+  "name": "practica-node-express",
+  "version": "1.0.0",
+  "description": "Este repositorio fue creado con el objetivo de **practicar y reforzar conocimientos de Node.js**, comenzando desde conceptos básicos hasta el uso de **Express** y el trabajo con **bases de datos relacionales**.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Luis ontiveros",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.11",
+    "pg": "^8.18.0"
+  }
+}
