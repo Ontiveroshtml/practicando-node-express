@@ -2,6 +2,7 @@ import pool from "../config/db.js"
 
 export const getAllTask = async (req, res, next) => {
   try {
+    const userId = req.user.id
     const result = await pool.query(
       `
       SELECT 
@@ -9,7 +10,9 @@ export const getAllTask = async (req, res, next) => {
       tasks.title AS task_title
       FROM tasks 
       JOIN users ON tasks.user_id = users.id
-      `
+      WHERE user_id = $1
+      `,
+      [userId]
     )
 
     res.status(200).json(result.rows)
@@ -20,7 +23,7 @@ export const getAllTask = async (req, res, next) => {
 
 export const createTask = async (req, res, next) => {
   try {
-    const userId = req.body.user_id
+    const userId = req.user.id
     let title = req.body.title
 
     if (isNaN(userId) || userId <= 0) {

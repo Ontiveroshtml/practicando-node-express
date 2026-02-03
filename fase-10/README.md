@@ -19,8 +19,11 @@ Durante esta fase se logró:
 - Crear un sistema de **tareas asociadas a usuarios**.
 - Obtener el ID del usuario desde el token (`req.user`) y no desde el body.
 
-El objetivo de esta fase fue entender cómo funciona la autenticación con JWT en un entorno real con base de datos y dejar lista la base para agregar después:
-- encriptación de contraseñas,
-- autorización por roles,
-- filtros por usuario,
-- y manejo más avanzado de sesiones.
+**ACTUALIZACIÓN**
+Se agregó:
+- Una nueva ruta (`/admin`) para poner en practica los permisos por roles utilizando los **tokens JWT**
+- Ahora se puede visualizar las tareas dependiendo el usuario
+- Implementacion de **bcrypt** al registrar un usuario 
+
+
+El objetivo de esta fase fue entender cómo funciona la autenticación con JWT en un entorno real con base de datos
